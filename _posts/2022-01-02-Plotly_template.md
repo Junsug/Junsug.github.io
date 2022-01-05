@@ -39,7 +39,7 @@ for template in ["plotly", "plotly_white", "plotly_dark", "ggplot2", "seaborn", 
     fig = px.scatter(gapminder_1997, x="gdpPercap", y="lifeExp", size = 'pop', color = 'continent',
                      hover_name = 'country', log_x=True, size_max = 50,
                      template=template, title="'%s' theme" % template)
-    fig.update_layout(legend=dict(orientation='h', yanchor='bottom',y=1, xanchor='right',x=1))
+    fig.update_layout()
     fig.show()
 ```
 {% include posts/plotly/2/plotly.html %}
